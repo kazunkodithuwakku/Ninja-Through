@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{406C67B5-E18D-4641-B7F0-4D410220FE22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,48 +50,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Globals.cs" />
-     <Compile Include="Assets\Scripts\cylObj.cs" />
-     <Compile Include="Assets\Scripts\moveWater.cs" />
-     <Compile Include="Assets\Scripts\ninja1Obj.cs" />
-     <Compile Include="Assets\Scripts\ninja2Obj.cs" />
-     <Compile Include="Assets\Scripts\ninja3Obj.cs" />
-     <Compile Include="Assets\Scripts\ninja4Obj.cs" />
-     <Compile Include="Assets\Scripts\objectController.cs" />
-     <Compile Include="Assets\Scripts\pillar10Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar11Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar12Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar13Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar1Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar2Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar3Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar4Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar5Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar6Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar7Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar8Obj.cs" />
-     <Compile Include="Assets\Scripts\pillar9Obj.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VR">
- <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Scripts\Globals.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\cylObj.cs" />
+    <Compile Include="Assets\Scripts\moveWater.cs" />
+    <Compile Include="Assets\Scripts\ninja1Obj.cs" />
+    <Compile Include="Assets\Scripts\ninja2Obj.cs" />
+    <Compile Include="Assets\Scripts\ninja3Obj.cs" />
+    <Compile Include="Assets\Scripts\ninja4Obj.cs" />
+    <Compile Include="Assets\Scripts\objectController.cs" />
+    <Compile Include="Assets\Scripts\pillar10Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar11Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar12Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar13Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar1Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar2Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar3Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar4Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar5Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar6Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar7Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar8Obj.cs" />
+    <Compile Include="Assets\Scripts\pillar9Obj.cs" />
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>D:/E/SLIIT/4thyear/2nd semester/Game Development/project/Ninja-Through/Ninja Through/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>D:/PROGRAM FILES/UNITY/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -97,5 +105,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>
